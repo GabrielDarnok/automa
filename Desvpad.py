@@ -5,11 +5,14 @@ Media = float(input("Qual a media? \n"))
 DP = 0
 
 for i in range(TamTab):
-    calc = int(input("Digite o valor: \n"))
+    calc = float(input("Digite o valor: "))
     x = (calc-Media)**2
+    print("O valor deste calculo é: ")
+    print(x)
     DP = x + DP
-    print("Ok, o proximo agora.\n")
+    print("\nOk, o proximo agora.")
 
+print(DP)
 s = math.sqrt(DP/TamTab)
-print("O valor é igual a: \n")
+print("\nO desvio padrão é igual a: ")
 print(s)
